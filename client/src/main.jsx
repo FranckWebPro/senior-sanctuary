@@ -26,6 +26,11 @@ const router = createBrowserRouter([
         loader: () => redirect("/countries"),
       },
       {
+        path: "",
+        element: <AllCountries />,
+        loader: () => redirect("/countries"),
+      },
+      {
         path: "/countries",
         element: <AllCountries />,
       },
